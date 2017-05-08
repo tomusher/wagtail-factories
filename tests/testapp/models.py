@@ -17,6 +17,7 @@ class MyBlock(blocks.StructBlock):
 
 
 class MyTestPage(Page):
+    app_label = 'test'
     body = StreamField([
         ('char_array', blocks.ListBlock(blocks.CharBlock())),
         ('int_array', blocks.ListBlock(blocks.IntegerBlock())),
